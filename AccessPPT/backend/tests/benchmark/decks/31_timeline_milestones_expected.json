@@ -1,0 +1,11 @@
+{
+  "case_name": "31_timeline_milestones",
+  "expected_order": [
+    "Title 1",
+    "Q1 Milestone",
+    "Q2 Milestone",
+    "Q3 Milestone",
+    "Q4 Milestone"
+  ],
+  "count": 5
+}

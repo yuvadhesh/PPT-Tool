@@ -1,0 +1,9 @@
+{
+  "case_name": "21_rotated_shapes",
+  "expected_order": [
+    "Title 1",
+    "Standard Body",
+    "Rotated Banner"
+  ],
+  "count": 3
+}

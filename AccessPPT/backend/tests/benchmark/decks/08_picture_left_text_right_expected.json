@@ -1,0 +1,9 @@
+{
+  "case_name": "08_picture_left_text_right",
+  "expected_order": [
+    "Title 1",
+    "Hardware Diagram",
+    "Specs Description"
+  ],
+  "count": 3
+}

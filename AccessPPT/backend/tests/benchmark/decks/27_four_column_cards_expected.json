@@ -1,0 +1,11 @@
+{
+  "case_name": "27_four_column_cards",
+  "expected_order": [
+    "Title 1",
+    "Pillar Card 1",
+    "Pillar Card 2",
+    "Pillar Card 3",
+    "Pillar Card 4"
+  ],
+  "count": 5
+}

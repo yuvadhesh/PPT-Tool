@@ -1,0 +1,9 @@
+{
+  "case_name": "23_alternate_content",
+  "expected_order": [
+    "Title 1",
+    "Standard Paragraph",
+    "Alternate Content Shape"
+  ],
+  "count": 3
+}

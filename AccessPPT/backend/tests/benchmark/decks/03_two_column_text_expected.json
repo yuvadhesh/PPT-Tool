@@ -1,0 +1,11 @@
+{
+  "case_name": "03_two_column_text",
+  "expected_order": [
+    "Title 1",
+    "Heading Left",
+    "Body Left",
+    "Heading Right",
+    "Body Right"
+  ],
+  "count": 5
+}

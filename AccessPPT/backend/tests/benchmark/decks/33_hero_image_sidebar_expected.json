@@ -1,0 +1,9 @@
+{
+  "case_name": "33_hero_image_sidebar",
+  "expected_order": [
+    "Title 1",
+    "Hero Building Photo",
+    "Sidebar Factsheet"
+  ],
+  "count": 3
+}

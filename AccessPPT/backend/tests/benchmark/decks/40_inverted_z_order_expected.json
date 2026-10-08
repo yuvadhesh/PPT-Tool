@@ -1,0 +1,10 @@
+{
+  "case_name": "40_inverted_z_order",
+  "expected_order": [
+    "Title 1",
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3"
+  ],
+  "count": 4
+}

@@ -1,0 +1,11 @@
+{
+  "case_name": "30_comparison_slide",
+  "expected_order": [
+    "Title 1",
+    "Intro Band",
+    "Monolith Column",
+    "Distributed Column",
+    "Conclusion Band"
+  ],
+  "count": 5
+}

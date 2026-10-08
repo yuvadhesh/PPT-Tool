@@ -1,0 +1,9 @@
+{
+  "case_name": "07_text_left_picture_right",
+  "expected_order": [
+    "Title 1",
+    "Product Description",
+    "Product Photo"
+  ],
+  "count": 3
+}

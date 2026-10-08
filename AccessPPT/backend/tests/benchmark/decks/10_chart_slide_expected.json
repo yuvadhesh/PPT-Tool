@@ -1,0 +1,9 @@
+{
+  "case_name": "10_chart_slide",
+  "expected_order": [
+    "Title 1",
+    "Revenue Chart",
+    "Chart Summary"
+  ],
+  "count": 3
+}

@@ -1,0 +1,9 @@
+{
+  "case_name": "15_overlapping_card_text",
+  "expected_order": [
+    "Title 1",
+    "Card Background",
+    "Card Text"
+  ],
+  "count": 3
+}

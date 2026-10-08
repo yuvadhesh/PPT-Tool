@@ -1,0 +1,9 @@
+{
+  "case_name": "11_smartart_diagram",
+  "expected_order": [
+    "Title 1",
+    "SmartArt Diagram",
+    "Process Summary"
+  ],
+  "count": 3
+}

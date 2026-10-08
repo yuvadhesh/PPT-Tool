@@ -1,0 +1,9 @@
+{
+  "case_name": "06_picture_caption_above",
+  "expected_order": [
+    "Title 1",
+    "Caption 1",
+    "Picture 1"
+  ],
+  "count": 3
+}

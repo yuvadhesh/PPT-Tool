@@ -1,0 +1,12 @@
+{
+  "case_name": "26_academic_slide",
+  "expected_order": [
+    "Title 1",
+    "Methodology Text",
+    "Figure 1",
+    "Figure 1 Caption",
+    "Experimental Results",
+    "References"
+  ],
+  "count": 6
+}

@@ -1,0 +1,16 @@
+{
+  "case_name": "19_grid_3x3_matrix",
+  "expected_order": [
+    "Title 1",
+    "Cell R1C1",
+    "Cell R1C2",
+    "Cell R1C3",
+    "Cell R2C1",
+    "Cell R2C2",
+    "Cell R2C3",
+    "Cell R3C1",
+    "Cell R3C2",
+    "Cell R3C3"
+  ],
+  "count": 10
+}

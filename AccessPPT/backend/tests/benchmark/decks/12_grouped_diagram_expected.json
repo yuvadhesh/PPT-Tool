@@ -1,0 +1,9 @@
+{
+  "case_name": "12_grouped_diagram",
+  "expected_order": [
+    "Title 1",
+    "Component Group",
+    "Architecture Details"
+  ],
+  "count": 3
+}

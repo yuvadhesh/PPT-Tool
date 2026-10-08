@@ -1,0 +1,10 @@
+{
+  "case_name": "32_step_process",
+  "expected_order": [
+    "Title 1",
+    "Phase 1",
+    "Phase 2",
+    "Phase 3"
+  ],
+  "count": 4
+}

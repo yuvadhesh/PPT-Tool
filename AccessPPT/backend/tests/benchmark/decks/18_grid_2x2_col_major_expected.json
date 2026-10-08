@@ -1,0 +1,11 @@
+{
+  "case_name": "18_grid_2x2_col_major",
+  "expected_order": [
+    "Title 1",
+    "Card 1 Header",
+    "Card 1 Body",
+    "Card 2 Header",
+    "Card 2 Body"
+  ],
+  "count": 5
+}

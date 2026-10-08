@@ -1,0 +1,11 @@
+{
+  "case_name": "16_footer_date_slidenumber",
+  "expected_order": [
+    "Title 1",
+    "Report Body",
+    "Date Placeholder 1",
+    "Footer Placeholder 2",
+    "Slide Number Placeholder 3"
+  ],
+  "count": 5
+}

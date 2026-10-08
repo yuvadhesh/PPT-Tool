@@ -1,0 +1,11 @@
+{
+  "case_name": "28_multi_row_cards",
+  "expected_order": [
+    "Title 1",
+    "Competency A",
+    "Competency B",
+    "Competency C",
+    "Competency D"
+  ],
+  "count": 5
+}

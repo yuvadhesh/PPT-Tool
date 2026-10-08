@@ -1,0 +1,11 @@
+{
+  "case_name": "35_multi_images_captions",
+  "expected_order": [
+    "Title 1",
+    "Site 1 Image",
+    "Site 1 Caption",
+    "Site 2 Image",
+    "Site 2 Caption"
+  ],
+  "count": 5
+}

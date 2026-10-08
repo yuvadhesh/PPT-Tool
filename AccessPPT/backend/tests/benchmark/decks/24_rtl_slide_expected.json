@@ -1,0 +1,9 @@
+{
+  "case_name": "24_rtl_slide",
+  "expected_order": [
+    "Title 1",
+    "RTL Primary Column",
+    "RTL Secondary Column"
+  ],
+  "count": 3
+}

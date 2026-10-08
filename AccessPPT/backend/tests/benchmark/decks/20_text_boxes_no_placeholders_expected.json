@@ -1,0 +1,9 @@
+{
+  "case_name": "20_text_boxes_no_placeholders",
+  "expected_order": [
+    "Custom Title Box",
+    "Section 1 Box",
+    "Section 2 Box"
+  ],
+  "count": 3
+}

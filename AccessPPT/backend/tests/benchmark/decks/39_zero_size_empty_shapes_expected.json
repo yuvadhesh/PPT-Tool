@@ -1,0 +1,9 @@
+{
+  "case_name": "39_zero_size_empty_shapes",
+  "expected_order": [
+    "Title 1",
+    "Meaningful Content",
+    "Zero Size Element"
+  ],
+  "count": 3
+}

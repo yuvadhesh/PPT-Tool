@@ -1,0 +1,10 @@
+{
+  "case_name": "04_three_column_text",
+  "expected_order": [
+    "Title 1",
+    "Pillar 1",
+    "Pillar 2",
+    "Pillar 3"
+  ],
+  "count": 4
+}

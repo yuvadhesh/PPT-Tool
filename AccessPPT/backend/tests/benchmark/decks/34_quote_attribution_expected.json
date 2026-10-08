@@ -1,0 +1,9 @@
+{
+  "case_name": "34_quote_attribution",
+  "expected_order": [
+    "Title 1",
+    "Quote Text",
+    "Quote Author"
+  ],
+  "count": 3
+}

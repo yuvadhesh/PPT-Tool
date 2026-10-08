@@ -1,0 +1,12 @@
+{
+  "case_name": "25_flowchart_connectors",
+  "expected_order": [
+    "Title 1",
+    "Start Step",
+    "Connector 1",
+    "Process Step",
+    "Connector 2",
+    "End Step"
+  ],
+  "count": 6
+}

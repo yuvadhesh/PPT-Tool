@@ -1,0 +1,9 @@
+{
+  "case_name": "38_header_content_disclaimer",
+  "expected_order": [
+    "Title 1",
+    "Prospectus Content",
+    "Disclaimer Note"
+  ],
+  "count": 3
+}

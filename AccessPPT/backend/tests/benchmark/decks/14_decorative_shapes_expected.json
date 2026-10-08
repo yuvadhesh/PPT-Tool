@@ -1,0 +1,9 @@
+{
+  "case_name": "14_decorative_shapes",
+  "expected_order": [
+    "Title 1",
+    "Main Content",
+    "Decorative Accent Circle"
+  ],
+  "count": 3
+}

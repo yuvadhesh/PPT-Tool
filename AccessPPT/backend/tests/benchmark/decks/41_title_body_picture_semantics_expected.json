@@ -1,0 +1,9 @@
+{
+  "case_name": "41_title_body_picture_semantics",
+  "expected_order": [
+    "Title 1",
+    "Body Text 1",
+    "Picture 1"
+  ],
+  "count": 3
+}

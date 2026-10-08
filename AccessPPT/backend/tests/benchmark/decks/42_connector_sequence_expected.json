@@ -1,0 +1,10 @@
+{
+  "case_name": "42_connector_sequence",
+  "expected_order": [
+    "Title 1",
+    "Stage 1 Box",
+    "Stage Arrow",
+    "Stage 2 Box"
+  ],
+  "count": 4
+}

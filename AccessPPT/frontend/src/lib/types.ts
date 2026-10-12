@@ -283,3 +283,101 @@ export interface ReadingOrderFixResult {
   download_url: string;
 }
 
+
+export interface EquationGeometry {
+  x: number;
+  y: number;
+  cx: number;
+  cy: number;
+  rot: number;
+  flip_h: boolean;
+  flip_v: boolean;
+}
+
+export type EquationCategory =
+  | "omml"
+  | "mathtype_ole"
+  | "equation_editor_ole"
+  | "other_equation_ole"
+  | "math_text"
+  | "image";
+
+export type EquationEligibility = "eligible" | "already_mathtype" | "needs_review" | "pending";
+
+export interface EquationCandidate {
+  id: string;
+  slide_number: number;
+  shape_id: number;
+  shape_name: string;
+  category: EquationCategory;
+  placement: "standalone_shape" | "inline_text" | "table_cell";
+  geometry: EquationGeometry;
+  group_path: string[];
+  text: string;
+  mathml?: string | null;
+  constructs: string[];
+  unsupported: string[];
+  prog_id?: string | null;
+  font_size_pt?: number | null;
+  confidence: string;
+  eligibility: EquationEligibility;
+  reason: string;
+  unit_id?: string | null;
+}
+
+export interface EquationInventory {
+  slide_count: number;
+  total: number;
+  by_category: Partial<Record<EquationCategory, number>>;
+  by_eligibility: Partial<Record<EquationEligibility, number>>;
+  category_labels: Record<EquationCategory, string>;
+  slides: { slide_number: number; equations: EquationCandidate[] }[];
+}
+
+export interface MathTypeIntegrationStatus {
+  adapter: string;
+  available: boolean;
+  mathtype_version?: string | null;
+  conversion_method?: string | null;
+  requires_user_interaction: boolean;
+  details: string;
+  guidance: string[];
+}
+
+export interface EquationReportItem {
+  id: string;
+  slide_number: number;
+  shape_id: number;
+  shape_name: string;
+  category: EquationCategory;
+  text: string;
+  status: "converted" | "failed" | "skipped" | "needs_review";
+  reason: string;
+}
+
+export interface EquationConversionReport {
+  generated_at: string;
+  adapter: MathTypeIntegrationStatus;
+  original_sha256: string;
+  summary: {
+    before: Partial<Record<EquationCategory, number>>;
+    after: Partial<Record<EquationCategory, number>>;
+    converted: number;
+    failed: number;
+    skipped: number;
+    needs_review: number;
+  };
+  validation: { passed: boolean; checks: { name: string; passed: boolean; detail: string }[] };
+  items: EquationReportItem[];
+}
+
+export interface EquationState {
+  status: "idle" | "scanned" | "queued" | "running" | "complete" | "failed" | "unavailable";
+  progress: number;
+  current_step?: string | null;
+  error?: string | null;
+  converted_available?: boolean;
+  scan?: EquationInventory;
+  report?: EquationConversionReport | null;
+  updated_at?: string;
+}

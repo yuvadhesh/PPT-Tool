@@ -52,6 +52,12 @@ class Settings(BaseSettings):
     # CORS
     CORS_ORIGINS: str = "http://localhost:3000,http://127.0.0.1:3000"
 
+    # MathType integration: "none" (default) or "windows_worker"
+    MATHTYPE_ADAPTER: str = "none"
+    MATHTYPE_WORKER_URL: str = ""
+    MATHTYPE_WORKER_TOKEN: str = ""
+    MATHTYPE_WORKER_TIMEOUT: float = 60.0
+
     # Rate Limiting
     RATE_LIMIT_PER_MINUTE: int = 60
 

@@ -7,7 +7,7 @@ celery_app = Celery(
     "accessppt",
     broker=settings.CELERY_BROKER_URL,
     backend=settings.CELERY_RESULT_BACKEND,
-    include=["app.tasks.analysis_tasks"],
+    include=["app.tasks.analysis_tasks", "app.tasks.equation_tasks"],
 )
 
 celery_app.conf.update(

@@ -4,6 +4,7 @@ import React, { useState, use } from "react";
 import Link from "next/link";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
+import EquationsPanel from "@/components/EquationsPanel";
 import {
   ShieldCheck,
   Sparkles,
@@ -29,6 +30,7 @@ import {
   ListOrdered,
   ArrowRight,
   BookOpen,
+  Sigma,
 } from "lucide-react";
 import {
   formatBytes,
@@ -59,7 +61,7 @@ export default function PresentationDetailPage({ params }: PageProps) {
 
   // Active tab state
   const [activeTab, setActiveTab] = useState<
-    "issues" | "alt_text" | "reading_order" | "contrast" | "originality"
+    "issues" | "alt_text" | "reading_order" | "contrast" | "originality" | "equations"
   >("issues");
 
   // Filters state
@@ -651,6 +653,18 @@ export default function PresentationDetailPage({ params }: PageProps) {
         >
           <ShieldCheck className="w-4 h-4 text-emerald-400" />
           <span>Originality Verification Guard</span>
+        </button>
+
+        <button
+          onClick={() => setActiveTab("equations")}
+          className={`pb-3 px-3 text-sm font-semibold border-b-2 transition-all flex items-center gap-2 ${
+            activeTab === "equations"
+              ? "border-brand-400 text-brand-300"
+              : "border-transparent text-slate-400 hover:text-white"
+          }`}
+        >
+          <Sigma className="w-4 h-4 text-violet-400" />
+          <span>Equation to MathType</span>
         </button>
       </div>
 
@@ -2172,6 +2186,8 @@ export default function PresentationDetailPage({ params }: PageProps) {
           </div>
         </div>
       )}
+
+      {activeTab === "equations" && <EquationsPanel presentationId={presentationId} />}
     </div>
   );
 }

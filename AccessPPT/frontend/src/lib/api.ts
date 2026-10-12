@@ -8,6 +8,9 @@ import {
   AnalysisRun,
   ReadingOrderReport,
   ReadingOrderFixResult,
+  EquationInventory,
+  EquationState,
+  MathTypeIntegrationStatus,
 } from "./types";
 
 const API_BASE_URL =
@@ -319,6 +322,35 @@ class ApiClient {
     return await this.downloadFile(
       `/presentations/${presentationId}/reading-order/debug-report`,
       filename || "reading_order_debug.json"
+    );
+  }
+
+  async getMathTypeIntegration(): Promise<MathTypeIntegrationStatus> {
+    return await this.request<MathTypeIntegrationStatus>(`/equations/integration`);
+  }
+
+  async scanEquations(presentationId: string): Promise<EquationInventory> {
+    return await this.request<EquationInventory>(`/presentations/${presentationId}/equations/scan`, {
+      method: "POST",
+    });
+  }
+
+  async convertEquations(presentationId: string): Promise<{ task_id: string; status: string }> {
+    return await this.request(`/presentations/${presentationId}/equations/convert`, { method: "POST" });
+  }
+
+  async getEquationState(presentationId: string): Promise<EquationState> {
+    return await this.request<EquationState>(`/presentations/${presentationId}/equations`);
+  }
+
+  async downloadConvertedEquations(presentationId: string, filename = "mathtype_presentation.pptx"): Promise<void> {
+    return await this.downloadFile(`/presentations/${presentationId}/equations/download`, filename);
+  }
+
+  async downloadEquationReport(presentationId: string): Promise<void> {
+    return await this.downloadFile(
+      `/presentations/${presentationId}/equations/report`,
+      `equation_report_${presentationId}.json`
     );
   }
 
